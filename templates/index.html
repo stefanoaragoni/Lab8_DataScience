@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inmueble</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 50px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="mb-4">Información del Inmueble</h2>
+    <form method="POST" action="/">
+    <div class="form-group">
+        <label for="city">Ciudad:</label>
+        <select class="form-control" id="city" name="city" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="area">Área:</label>
+        <input type="text" class="form-control" id="area" name="area" required>
+    </div>
+
+    <div class="form-group">
+        <label for="rooms">Habitaciones:</label>
+        <input type="number" class="form-control" id="rooms" name="rooms" required>
+    </div>
+
+    <div class="form-group">
+        <label for="bathroom">Baños:</label>
+        <input type="number" class="form-control" id="bathroom" name="bathroom" required>
+    </div>
+
+    <div class="form-group">
+        <label for="parking_spaces">Estacionamientos:</label>
+        <input type="number" class="form-control" id="parking_spaces" name="parking_spaces" required>
+    </div>
+
+    <div class="form-group">
+        <label for="floor">Piso:</label>
+        <input type="number" class="form-control" id="floor" name="floor" required>
+    </div>
+
+    <div class="form-group">
+        <label for="animal">Animal permitido:</label>
+        <select class="form-control" id="animal" name="animal" required>
+            <option value="1">Sí</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="furniture">Muebles:</label>
+        <select class="form-control" id="furniture" name="furniture" required>
+            <option value="1">Sí</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="hoa">HOA (R$):</label>
+        <input type="number" class="form-control" id="hoa" name="hoa" required>
+    </div>
+
+    <div class="form-group">
+        <label for="rent_amount">Alquiler (R$):</label>
+        <input type="number" class="form-control" id="rent_amount" name="rent_amount" required>
+    </div>
+
+    <div class="form-group">
+        <label for="property_tax">Impuesto a la propiedad (R$):</label>
+        <input type="number" class="form-control" id="property_tax" name="property_tax" required>
+    </div>
+
+    <div class="form-group">
+        <label for="fire_insurance">Seguro contra incendios (R$):</label>
+        <input type="number" class="form-control" id="fire_insurance" name="fire_insurance" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Analizar</button>
+
+</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

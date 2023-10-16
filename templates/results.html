@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Resultados del Análisis</title>
+</head>
+<body>
+{% extends "bootstrap/base.html" %}
+{% block title %}Resultados del Análisis{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-4">Resultados del Análisis</h1>
+    <div class="card mt-4 shadow-lg">
+        <div class="jumbotron-custom">
+            <h4>Valor del Alquiler Estimado</h4>
+            <h2>R$ {{ valor_renta|round(2) }}</h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
